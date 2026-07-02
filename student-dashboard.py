@@ -1,4 +1,12 @@
+"""
+Student Performance Analytics Dashboard
+----------------------------------------
+A Streamlit application that analyzes student performance data
+and presents insights through interactive visualizations.
 
+Run locally with:
+    streamlit run student-dashboard.py
+"""
 
 import streamlit as st
 import pandas as pd
@@ -57,9 +65,16 @@ st.markdown(
     .section-header {
         border-left: 5px solid #4b6cb7;
         padding-left: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
         margin-top: 25px;
         margin-bottom: 10px;
-        color: #182848;
+        background-color: #eef1f7;
+        border-radius: 4px;
+        color: #182848 !important;
+    }
+    .section-header * {
+        color: #182848 !important;
     }
 
     /* Sidebar */
